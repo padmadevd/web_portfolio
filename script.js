@@ -208,10 +208,10 @@ function jq($){
     });
 
     let menu_i = $("#menu_i1");
-    let menu_i_width = parseInt(menu_i.css("width"))+parseInt(menu_i.css("padding-left"))+parseInt(menu_i.css("padding-right"));
-    let menu_i_height = parseInt(menu_i.css("height"))+parseInt(menu_i.css("padding-top"))+parseInt(menu_i.css("padding-bottom"));
-    let menu_i_top = parseInt($("#menu").css("top"))+3;
-    let menu_i_left = parseInt($("#menu").css("left"))+4;
+    let menu_i_width = parseInt(menu_i.css("width"))+parseInt(menu_i.css("padding-left"))+parseInt(menu_i.css("padding-right"))+1;
+    let menu_i_height = parseInt(menu_i.css("height"))+parseInt(menu_i.css("padding-top"))+parseInt(menu_i.css("padding-bottom"))+1;
+    let menu_i_top = parseInt($("#menu").css("top"))+2;
+    let menu_i_left = parseInt($("#menu").css("left"))+2;
 
     $("#menu_sel").css({
         "position":"fixed",
@@ -587,7 +587,7 @@ function jq($){
     });
 
     animate("#menu_sel", {
-        top:menu_i_top+menu_i_height*3+6+"px",
+        top:menu_i_top+menu_i_height*3+2+"px",
         ease: 'linear',
         autoplay: onScroll({
             container: 'body',
