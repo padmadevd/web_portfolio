@@ -42,12 +42,12 @@ body{
 
 #f1_img{
     background-color: black;
-    border: 4px inset white;
+    border: 2px solid white;
 }
 
 #f1_img_border{
     background-color: black;
-    border: 4px inset white;
+    border: 2px solid white;
 }
 
 #f1_title{
@@ -78,7 +78,7 @@ body{
 #menu{
     background-color: black;
     color: white;
-    border: 4px inset white;
+    border: 2px solid white;
 }
 
 .menu_i{
@@ -181,21 +181,21 @@ body{
     /* opacity: 0; */
     background-color: black;
     color: white;
-    border: 4px inset white;
+    border: 2px solid white;
 }
 
 #f3_img2{
     /* opacity: 0; */
     background-color: black;
     color: white;
-    border: 4px inset white;
+    border: 2px solid white;
 }
 
 #f3_img3{
     /* opacity: 0; */
     background-color: black;
     color: white;
-    border: 4px inset white;
+    border: 2px solid white;
 }
 
 #f4_title{
@@ -208,7 +208,7 @@ body{
     opacity: 0;
     background-color: black;
     color: white;
-    border: 4px inset white;
+    border: 2px solid white;
 }
 
 #f5_title{
