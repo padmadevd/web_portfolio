@@ -252,3 +252,13 @@ body{
 .f2_link{
     opacity: 0;
 }
+
+#warn{
+    opacity: 0.5;
+    font-family: "Ubuntu_Light_italic", sans-serif;
+    color: white;
+}
+
+#warn_in{
+    color: red;
+}
