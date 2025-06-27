@@ -124,6 +124,51 @@ function jq($){
         "width":f_width*50/100+"px"
     });
 
+    $("#f2_arrow").css({
+        "position":"fixed",
+        "top":f_top+f_height*40/100+"px",
+        "left":f_left+f_width*90/100+"px",
+        "rotate":"60deg",
+        "height":f_width*10/100+"px"
+    });
+
+    $("#f2_arrow_text").css({
+        "font-size":f_height*5/100+"px",
+        "position":"fixed",
+        "top":f_top+f_height*30/100+"px",
+        "left":f_left+f_width*90/100+"px",
+    });
+
+    $(".f2_link").css({
+        "position":"fixed",
+        "left":f_left+f_width*80/100+"px",
+        "padding":0+"px"
+    });
+
+    $(".f2_link_img").css({
+        "height":f_height*10/100+"px",
+        "width":f_height*10/100+"px"
+    });
+
+    $("#f2_git_link").css({
+        "top":f_top+f_height*5/100+"px"
+    });
+    $("#f2_lin_link").css({
+        "top":f_top+f_height*20/100+"px"
+    });
+    $("#f2_chef_link").css({
+        "top":f_top+f_height*35/100+"px"
+    });
+    $("#f2_leet_link").css({
+        "top":f_top+f_height*50/100+"px"
+    });
+    $("#f2_insta_link").css({
+        "top":f_top+f_height*65/100+"px"
+    });
+    $("#f2_itch_link").css({
+        "top":f_top+f_height*80/100+"px"
+    });
+
     $("#f3_title").css({
         "font-size":f_height*12/100+"px",
         "position":"fixed",
@@ -160,6 +205,21 @@ function jq($){
         "top":f_top+f_height*70/100+"px",
         "left":f_left+f_width*20/100+"px",
         "width":f_width*40/100+"px"
+    });
+
+    $("#f3_arrow").css({
+        "position":"fixed",
+        "top":f_top+f_height*15/100+"px",
+        "left":f_left+f_width*50/100+"px",
+        "rotate":"30deg",
+        "height":f_width*10/100+"px"
+    });
+
+    $("#f3_arrow_text").css({
+        "font-size":f_height*5/100+"px",
+        "position":"fixed",
+        "top":f_top+f_height*5/100+"px",
+        "left":f_left+f_width*50/100+"px",
     });
 
     let f3_img1_x_s = vp_width;
@@ -452,7 +512,7 @@ function jq($){
         })
     });
 
-    animate(['#f2_title', '#f2_desc1', '#f2_desc2', '#f2_desc3'], {
+    animate(['#f2_title', '#f2_desc1', '#f2_desc2', '#f2_desc3', ".f2_link", "#f2_arrow", "#f2_arrow_text"], {
         opacity: 1,
         ease: 'linear',
         delay: stagger(200),
@@ -466,7 +526,7 @@ function jq($){
         })
     });
 
-    animate(['#f2_title', '#f2_desc1', '#f2_desc2', '#f2_desc3'], {
+    animate(['#f2_title', '#f2_desc1', '#f2_desc2', '#f2_desc3', ".f2_link", "#f2_arrow", "#f2_arrow_text"], {
         opacity: 0,
         ease: 'linear',
         delay: stagger(200),
@@ -480,7 +540,7 @@ function jq($){
         })
     });
 
-    animate(['#f3_title', '#f3_name', '#f3_desc1', '#f3_desc2', '#f3_desc3'], {
+    animate(['#f3_title', '#f3_name', '#f3_desc1', '#f3_desc2', '#f3_desc3', "#f3_arrow", "#f3_arrow_text"], {
         opacity: 1,
         ease: 'linear',
         delay: stagger(200),
@@ -599,7 +659,7 @@ function jq($){
         })
     });
 
-    animate(['#f3_title', '#f3_name', '#f3_desc1', '#f3_desc2', '#f3_desc3'], {
+    animate(['#f3_title', '#f3_name', '#f3_desc1', '#f3_desc2', '#f3_desc3', "#f3_arrow", "#f3_arrow_text"], {
         opacity: 0,
         ease: 'linear',
         delay: stagger(200),
