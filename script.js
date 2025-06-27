@@ -35,6 +35,17 @@ function jq($){
     let img_top = f_top+f_height*25/100;
     let img_left = f_left+f_width*60/100;
 
+    $("#warn").css({
+        "font-size":f_height*2/100+"px",
+        "position":"fixed",
+        "top":f_top+"px",
+        "left":f_left+10+"px"
+    });
+
+    $("#warn_in").css({
+        "font-size":f_height*3/100+"px",
+    });
+
     $("#f1_img").css({
         "position":"fixed",
         "top": img_top+"px",
