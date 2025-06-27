@@ -29,6 +29,9 @@
 body{
     background-color: black;
     color: white;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 #viewport{
@@ -88,32 +91,32 @@ body{
 
 #f1_scroll{
     background-color: cornflowerblue;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 #f2_scroll{
     background-color: brown;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 #f3_scroll{
     background-color: blueviolet;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 #f4_scroll{
     background-color: coral;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 #f5_scroll{
     background-color: coral;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 #f2_title{
@@ -138,6 +141,16 @@ body{
     opacity: 0;
     font-family: "BodoniModa", sans-serif;
     color: white;
+}
+
+#f2_arrow_text{
+    opacity: 0;
+    font-family: "OoohBaby", sans-serif;
+    color: white;
+}
+
+#f2_arrow{
+    opacity: 0;
 }
 
 .f2_font_ob{
@@ -198,6 +211,16 @@ body{
     border: 2px solid white;
 }
 
+#f3_arrow_text{
+    opacity: 0;
+    font-family: "OoohBaby", sans-serif;
+    color: white;
+}
+
+#f3_arrow{
+    opacity: 0;
+}
+
 #f4_title{
     opacity: 0;
     font-family: "OoohBaby", sans-serif;
@@ -224,4 +247,8 @@ body{
 #menu_sel{
     background-color: white;
     mix-blend-mode: difference;
+}
+
+.f2_link{
+    opacity: 0;
 }
