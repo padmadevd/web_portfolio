@@ -89,34 +89,40 @@ body{
     color: white;
 }
 
-#f1_scroll{
+/* .f_gap{
     background-color: black;
     width: 100%;
     height: 100%;
+} */
+
+#f1_scroll{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
 }
 
 #f2_scroll{
     background-color: black;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 300vh;
 }
 
 #f3_scroll{
     background-color: black;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 500vh;
 }
 
 #f4_scroll{
     background-color: black;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 300vh;
 }
 
 #f5_scroll{
     background-color: black;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 #f2_title{
@@ -250,11 +256,11 @@ body{
 }
 
 .f2_link{
-    opacity: 0;
+    opacity: 1;
 }
 
 #warn{
-    opacity: 0.5;
+    opacity: 0.25;
     font-family: "Ubuntu_Light_italic", sans-serif;
     color: white;
 }
