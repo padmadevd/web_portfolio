@@ -150,9 +150,12 @@ function jq($){
         "left":f_left+f_width*90/100+"px",
     });
 
+    let f2_link_left_s = vp_width+10;
+    let f2_link_left_e = f_left+f_width*80/100;
+
     $(".f2_link").css({
         "position":"fixed",
-        "left":f_left+f_width*80/100+"px",
+        "left": f2_link_left_s+"px",
         "padding":0+"px"
     });
 
@@ -523,7 +526,7 @@ function jq($){
         })
     });
 
-    animate(['#f2_title', '#f2_desc1', '#f2_desc2', '#f2_desc3', ".f2_link", "#f2_arrow", "#f2_arrow_text"], {
+    animate(['#f2_title', '#f2_desc1', '#f2_desc2', '#f2_desc3', "#f2_arrow", "#f2_arrow_text"], {
         opacity: 1,
         ease: 'linear',
         delay: stagger(200),
@@ -537,8 +540,36 @@ function jq($){
         })
     });
 
-    animate(['#f2_title', '#f2_desc1', '#f2_desc2', '#f2_desc3', ".f2_link", "#f2_arrow", "#f2_arrow_text"], {
+    animate(".f2_link", {
+        left: f2_link_left_e+"px",
+        ease: 'linear',
+        delay: stagger(200),
+        autoplay: onScroll({
+            container: 'body',
+            target: '#f2_scroll',
+            enter: '50% 0%',
+            leave: '25% 25%',
+            sync: .5,
+            // debug: true
+        })
+    });
+
+    animate(['#f2_title', '#f2_desc1', '#f2_desc2', '#f2_desc3', "#f2_arrow", "#f2_arrow_text"], {
         opacity: 0,
+        ease: 'linear',
+        delay: stagger(200),
+        autoplay: onScroll({
+            container: 'body',
+            target: '#f2_scroll',
+            enter: '50% 75%',
+            leave: '25% 100%',
+            sync: .5,
+            // debug: true
+        })
+    });
+
+    animate(".f2_link", {
+        left: f2_link_left_s+"px",
         ease: 'linear',
         delay: stagger(200),
         autoplay: onScroll({
@@ -746,21 +777,21 @@ function jq($){
 
     $("#menu_i2").click(function(){
         window.scrollTo({
-            top:vp_height,
+            top:vp_height*2,
             behavior: "smooth"
         });
     });
 
     $("#menu_i3").click(function(){
         window.scrollTo({
-            top:vp_height*2,
+            top:vp_height*5,
             behavior: "smooth"
         });
     });
 
     $("#menu_i4").click(function(){
         window.scrollTo({
-            top:vp_height*3,
+            top:vp_height*10,
             behavior: "smooth"
         });
     });
